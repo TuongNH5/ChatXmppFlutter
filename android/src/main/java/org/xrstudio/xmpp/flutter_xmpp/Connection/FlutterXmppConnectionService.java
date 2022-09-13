@@ -142,7 +142,8 @@ public class FlutterXmppConnectionService extends Service {
 
         }
         start();
-        return Service.START_STICKY;
+        return Service.START_REDELIVER_INTENT
+;
     }
 
     @Override
