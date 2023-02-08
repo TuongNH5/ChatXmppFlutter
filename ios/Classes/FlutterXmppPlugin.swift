@@ -608,6 +608,7 @@ public class FlutterXmppPlugin: NSObject, FlutterPlugin {
     
     //MARK: - perform XMPP Connection
     func performXMPPConnectionActivity() {
+        APP_DELEGATE.objXMPPConnStatus = .None
         switch APP_DELEGATE.objXMPPConnStatus {
         case .None,
              .Failed:
