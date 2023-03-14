@@ -794,9 +794,9 @@ public class FlutterXmppPlugin implements MethodCallHandler, FlutterPlugin, Acti
             i.putExtra(Constants.USER_STREAM_MANAGEMENT, useStreamManagement);
             i.putExtra(Constants.AUTOMATIC_RECONNECTION, automaticReconnection);
             if (Build.VERSION.SDK_INT >=  Build.VERSION_CODES.O /*Android 8*/)
-                applicationContext.startForegroundService(intent);
+                activity.startForegroundService(intent);
             else
-                applicationContext.startService(intent);
+                activity.startService(intent);
 //            activity.startService(i);
         }
     }
